@@ -92,8 +92,8 @@ button{
     border: none;
     font-style: normal;
     font-weight: bold;    
-    width: 75px;  
-    height: 25px; 
+    width: 120px;  
+    height: 30px; 
     margin-top: 5%;
 }
 
@@ -153,5 +153,10 @@ button{
 
     .units{
         font-size: 0.8rem;
+    }
+
+    button{   
+        width: 120px;  
+        height: 30px; 
     }
 }
