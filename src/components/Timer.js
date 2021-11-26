@@ -22,6 +22,7 @@ function Timer() {
                 <div className={styles.min}>     Minutes </div>
                 <div className={styles.second}>     Seconds</div>
             </div>
+            <button>Rules</button>
         </div>
     )
 }
