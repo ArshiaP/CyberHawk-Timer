@@ -6,6 +6,7 @@ import logo from './Vector.png';
 function Timer() {
     const DayshoursMinSecs = {days :1,hours:1, minutes: 20, seconds: 40}
     return (
+        <div className={styles.bg}>
         <div className={styles.hero}>
             <div className={styles.img}>
                 <img src ={logo}></img>
@@ -23,6 +24,7 @@ function Timer() {
                 <div className={styles.second}>     Seconds</div>
             </div>
             <button>Rules</button>
+        </div>
         </div>
     )
 }
