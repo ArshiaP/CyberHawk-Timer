@@ -84,7 +84,7 @@
     -webkit-text-stroke-color: #F28FE4;
 }
 
-button{
+.pop{
     background: #F28FE4;
     border-radius: 27px; 
     font-family: Montserrat;
@@ -155,7 +155,7 @@ button{
         font-size: 0.8rem;
     }
 
-    button{   
+    .pop{   
         width: 120px;  
         height: 30px; 
     }

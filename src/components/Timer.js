@@ -23,7 +23,7 @@ function Timer() {
                 <div className={styles.min}>     Minutes </div>
                 <div className={styles.second}>     Seconds</div>
             </div>
-            <button>Rules</button>
+            <button className={styles.pop}>Rules</button>
         </div>
         </div>
     )
