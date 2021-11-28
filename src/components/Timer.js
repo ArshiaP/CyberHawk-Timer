@@ -2,6 +2,9 @@ import React from 'react';
 import styles from "./timer.module.css";
 import CountdownTimer from './CountdownTimer';
 import logo from './Vector.png';
+import Rules from './Rules';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css'
 
 function Timer() {
     const DayshoursMinSecs = {days :1,hours:1, minutes: 20, seconds: 40}
@@ -23,7 +26,10 @@ function Timer() {
                 <div className={styles.min}>     Minutes </div>
                 <div className={styles.second}>     Seconds</div>
             </div>
-            <button className={styles.pop}>Rules</button>
+            <Popup trigger={<button className={styles.pop}>Rules</button>} position="right center">
+                <Rules/>
+            </Popup>
+            
         </div>
         </div>
     )
