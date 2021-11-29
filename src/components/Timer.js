@@ -8,8 +8,6 @@ import 'reactjs-popup/dist/index.css'
 import ControlledPopup from './ControlledPopup'
 
 function Timer() {
-    const [open, setOpen] = useState(false);
-    const closeModal = () => setOpen(false);
     const DayshoursMinSecs = {days :1,hours:1, minutes: 20, seconds: 40}
     return (
         <div className={styles.bg}>
@@ -29,10 +27,10 @@ function Timer() {
                 <div className={styles.min}>     Minutes </div>
                 <div className={styles.second}>     Seconds</div>
             </div>
-            <button type="button" className={styles.pop} onClick={() => setOpen(!open)}>Rules</button>
+            <button type="button" className={styles.pop}>Rules</button>
             {/* <Popup open={open} closeOnDocumentClick onClose={closeModal} className={styles.popup_content} position="top center" modal> */}
                 <div className ={styles.rules_body}>
-                <a className={styles.close} onClick={closeModal}>&times;</a>
+                <a className={styles.close}>&times;</a>
                 <h1 className = {styles.rules}>Rules</h1>
                 <div className={styles.content}>
                     <ul>
