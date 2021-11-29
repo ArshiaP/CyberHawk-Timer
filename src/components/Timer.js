@@ -5,6 +5,7 @@ import logo from './Vector.png';
 import Rules from './Rules';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'
+import ControlledPopup from './ControlledPopup'
 
 function Timer() {
     const [open, setOpen] = useState(false);
@@ -28,20 +29,22 @@ function Timer() {
                 <div className={styles.min}>     Minutes </div>
                 <div className={styles.second}>     Seconds</div>
             </div>
-            <Popup open={open} closeOnDocumentClick onClose={closeModal} className={styles.popup_content} trigger={<button className={styles.pop}>Rules</button>} position="top center" modal>
+            <button type="button" className={styles.pop} onClick={() => setOpen(!open)}>Rules</button>
+            {/* <Popup open={open} closeOnDocumentClick onClose={closeModal} className={styles.popup_content} position="top center" modal> */}
                 <div className ={styles.rules_body}>
-                <button className={styles.close} onClick={() => setOpen(o => !o)}>X</button>
+                <a className={styles.close} onClick={closeModal}>&times;</a>
                 <h1 className = {styles.rules}>Rules</h1>
                 <div className={styles.content}>
-                    <ol>
-                    <li>Register at <a href='/'>techtatva.in</a></li>
-                    <li>Enter the user ID obtained after registering.</li>
-                    <li>Participants will only be eligible for prizes if they have a valid user ID. </li>
-                    <li>The validity of the user ID will be checked at the time of declaration of winners.</li>
-                    </ol>
+                    <ul>
+                    <li>1.Register at <a href='/'>techtatva.in</a></li>
+                    <li>2.Enter the user ID obtained after registering.</li>
+                    <li>3.Participants will only be eligible for prizes if they have a valid user ID. </li>
+                    <li>4.The validity of the user ID will be checked at the time of declaration of winners.</li>
+                    </ul>
                 </div>
             </div>
-            </Popup>
+            {/* </Popup> */}
+            
             
         </div>
         </div>
