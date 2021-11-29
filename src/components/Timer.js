@@ -28,8 +28,7 @@ function Timer() {
                 <div className={styles.min}>     Minutes </div>
                 <div className={styles.second}>     Seconds</div>
             </div>
-            <Popup trigger={<button className={styles.pop}>Rules</button>} position="top center" modal>
-                {/* <Rules/> */}
+            <Popup open={open} closeOnDocumentClick onClose={closeModal} className={styles.popup_content} trigger={<button className={styles.pop}>Rules</button>} position="top center" modal>
                 <div className ={styles.rules_body}>
                 <button className={styles.close} onClick={() => setOpen(o => !o)}>X</button>
                 <h1 className = {styles.rules}>Rules</h1>

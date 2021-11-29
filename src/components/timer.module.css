@@ -206,8 +206,17 @@ ol li {
 a:link,a:hover,a:visited,a:active{
     color:white
 }
+
 .close{
     position:absolute;
     right:0px;
-    background-color: #242222;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #F178B6;
+    padding-right: 20px;
+    cursor: pointer;
 }
+
+
+
